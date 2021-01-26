@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasuri-MyPortfolio-2021</title>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <!-- <img src="images/kasuLogo.jpg" alt="kasuLogo"> -->
+                <h2 class="logo-text">MyPortfolio</h2>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#aboutme">about me</a></li> 
+                    <li><a href="#myservice">My Service</a></li> 
+                    <li><a href="#myworks">My Works</a></li> 
+                </ul>
+
+                <!-- <button type="button" class="btn-class">Sign up</button> -->
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </div>
+
+
+        <div class="banner-title">
+            <h1>Hi,<br> I'm <span>Kasuri</span>  <br> Welcome to <span>myPortfolio</span>.</h1>
+            <div class="btn-explor">
+                <button type="button" class="btn-class " onclick="window.open('https://kasuritech.wordpress.com/', '_blank')">My Blog</button>
+            </div>
+            <img src="images/kas-pic-7-Copy.png" alt="banner-pic1" class="banner-pic1">
+        </div>
+
+        <div class="aboutme" id="aboutme" >
+            <div class="aboutme-pic1">
+                
+                <img src="images/kasu-page-pic2-Copy.png" alt="aboutme-pic1" class="aboutme-pic2">
+            </div>
+
+<div class="aboutme-rightSide-tabSet">
+    <h2>About me</h2>
+                <div class="tab-container">
+    
+                    <button class="tab-items" onclick="aboutMeTabController('aboutmetext')">About me</button>
+                    <button class="tab-items" onclick="aboutMeTabController('education')">Education</button>
+                    <button class="tab-items" onclick="aboutMeTabController('technicalskill')">Technical skills</button>
+    
+                </div>
+    
+               <div class="tab-container-body">
+        
+                    <div id="aboutmetext" class=" tabn" >
+                        <h2>I'm Kasuri Kanchanamala</h2>
+                        <p>I have followed IT degree and I' undergraduate final year student.I intend to work in the software field , my objective is to achive organizatioal goal with maximum effort and flexibility using my knowledge,
+                            skill and competenies while achieving a career growth.</p>
+                    </div>
+        
+                    <div id="education" class=" tabn" style="display:none">
+                        <h2>I have achived</h2>
+                        <ul>
+                            <li>2019 – Present University of Colombo School of Computing, Sri Lanka final year
+                            student of BIT (Bachelor of Information Technology) (external).</li>
+                            
+                            <li>I have passed in Higher Diploma in Information Technology (BIT – UCSC) in 2019.</li>
+                            <li>I have passed in Diploma in Information Technology (BIT – UCSC) in 2018.</li>
+                            <li>I have passed FIT (Fundamental in Information Technology).</li>
+                            <li>I have completed JavaSE course in Colombo UCSC in 2018.</li>
+                            <li>I have completed English course in Esoft in 2011.</li>
+                            <li>I have done basic Information technology DeTec course (diploma) in Esoft.</li>
+              
+                          </ul>
+                    </div>
+        
+                    <div id="technicalskill" class=" tabn" style="display:none">
+                        <h2>Technical Skills</h2>
+                        <p>Followings are some of My technical skills</p>
+                        <dl>
+                          <dt>DATABASE</dt>
+                          <dd>- MYSQL, MSSQL </dd>
+                          
+                          <dt>PROGRAMMING/SCRIPTING LANGUAGES</dt>
+                          <dd>- Java, php, Html, xml, CSS, JavaScript
+                          </dd>
+                          
+                          <dt>FRONT-END FRAMEWORKS</dt>
+                          <dd>- Bootstrap </dd>
+                          
+                          <dt>CMS</dt>
+                          <dd>- WordPress</dd>
+                          
+                          <dt>IDE</dt>
+                          <dd>- NetBeans, Eclipse, Intel J idea, MYSQL Workbench
+                          </dd>
+                         
+            
+                        </dl>
+                        
+                      
+                    </div>
+        
+    </div>              
+    
+    
+</div>
+        </div> 
+        <!-- aboutme section-end -->
+
+
+        <div class="myservice" id="myservice" style="background:yellow;">
+        
+            <div class="myservice-items">
+
+                <div class="myservice-pic1">
+                    <img src="images/webdev2.png" alt="service1" class="service-icon icon1">
+                    <p>I can make your dream web site <br>
+                        to achieve your goal.
+                </p>
+                </div>
+                <div class="myservice-pic2">
+                    <img src="images/wordpress1.png" alt="service2" class="service-icon icon2">
+                    <p>I am good at wordpress & <br>
+                        creating front end web design.</p>
+                </div>
+
+            </div>
+
+            <div class="service-img">
+                <img src="images/Np2.jpg" alt="service-img" class="myservice-image1">
+            </div>
+
+        </div>
+        <div class="myworks" id="myworks">
+
+<h2 class="mywork-title">My Works Collection</h2>
+
+           <div class="carasol-side-bar">
+
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/services1-1-wordpres-Copy.png" style="width:100%" alt="carasol-sidesho-pic1">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/work3.png" style="width:100%" alt="carasol-sidesho-pic2">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/service2-front-end-Copy.png" style="width:100%" alt="carasol-sidesho-pic3">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+
+
+           </div>
+
+        </div>
+
+
+
+        <footer>
+            <h3>Subscribe To Our Newsletter</h3>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Enter email here">
+                <!-- <label for="email"></label> -->
+                <button type="button" class="btn-class">Subscribe</button>
+            </form>
+<p>Copyright @ 2021 Designd by Kasuri</p>
+        </footer>
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
